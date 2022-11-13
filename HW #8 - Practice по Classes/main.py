@@ -1,24 +1,8 @@
-# from datetime import date
-# from decimal import Decimal
-# from classes import Employee
-#
-# john = Employee(name='John', start=date(2022, 10, 5), rate=Decimal("11"), taxes=10)
-#
-# john.update_rate(Decimal("10"))
-# print(john.how_long())
-# print(john._rate)
-#
-# Employee.show_line()
-# Employee.show_row(john)
-# Employee.show_line()
-
-
 from decimal import Decimal
 from datetime import date
 
 from decorator import timer
 from classes import Employee
-
 
 employees = [
     Employee(name="John", start=date(2022, 5, 20), rate=Decimal("11"), taxes=10),
@@ -31,8 +15,7 @@ employees = [
 ]
 
 
-
-@timer(func_name = "Show table")
+@timer(func_name="Show table")
 def show_table():
     Employee.show_header()
     for employee in employees:
@@ -49,5 +32,3 @@ if __name__ == "__main__":
     show_table()
     update_table()
     show_table()
-
-
