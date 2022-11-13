@@ -25,7 +25,7 @@ def show_table():
 
 def update_table():
     for employee in employees:
-        employee.update_rate(employee.rate + 10)
+        employee.update_rate(employee.rate + 100)
 
 
 if __name__ == "__main__":

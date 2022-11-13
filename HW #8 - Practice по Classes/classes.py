@@ -1,7 +1,7 @@
 from datetime import date
 from decimal import Decimal
 
-# from decorator import timer
+from decorator import timer
 
 
 class Employee:
