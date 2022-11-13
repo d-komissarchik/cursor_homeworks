@@ -1,8 +1,8 @@
 from framework.models import Model
 
 
-class Plant(Model):
-    file = "plants.json"
+class Saloon(Model):
+    file = "saloons.json"
 
     def __init__(self, name, location):
         self.name = name
@@ -12,7 +12,7 @@ class Plant(Model):
 class Employee(Model):
     file = "employees.json"
 
-    def __init__(self, name, email, plant_id):
+    def __init__(self, name, email, name_saloon):
         self.name = name
         self.email = email
-        self.plant_id = plant_id
+        self.name_saloon = name_saloon
