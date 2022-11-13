@@ -26,7 +26,7 @@ class Controller:
         print(saloon["location"])
 
     @staticmethod
-    def delete_saloon_by_id(id):
+    def delete_saloon_by_id():
         id = int(input('Type id of saloon, which you want to delete: '))
         Saloon.delete(id)
 
@@ -64,6 +64,5 @@ class Controller:
     def exit_program():
         print("Goodbye!")
         exit()
-
 
 

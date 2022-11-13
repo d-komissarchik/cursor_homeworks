@@ -1,4 +1,3 @@
-from models.models import Saloon, Employee
 from framework.control import Controller
 
 while True:
