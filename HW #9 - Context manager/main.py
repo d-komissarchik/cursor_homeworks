@@ -25,6 +25,9 @@ class MyCustomManager:
             log.write(f'{datetime.now()} {name_file} {action}')
 
 
+with MyCustomManager('file.txt', 'r') as open_file:
+    print(open_file.read())
+
 #Написати ф-цію яка переводить файл logs.txt в logs.csv
 
 def writer():
@@ -34,8 +37,4 @@ def writer():
             csv_file.write(line.strip('/n'))
 
 writer()
-
-
-
-
 
